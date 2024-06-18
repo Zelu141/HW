@@ -6,7 +6,7 @@ def get_mask_card_number(card_number: str) -> str | None:
         return None
 
 
-def get_mask_account(account: str) -> str | None:
+def get_mask_account(account: str) -> str |None:
     """Фукнция маскирующая номер счёта"""
     if account.isdigit() and len(account) == 20:
         return f"**{account[-4::]}"
