@@ -1,7 +1,18 @@
 from typing import Any, Dict, List
 
 
+def filter_by_state(origin_list: List[Dict[str, Any]], state: str = "EXECUTED") -> List[Dict[str, Any]]:
+    """
+    Фильтрует список операций по заданному состоянию.
 
+    Параметры:
+        origin_list (List[Dict[str, Any]]): Список словарей, представляющих операции.
+        state (str): Состояние, по которому нужно фильтровать операции. По умолчанию 'EXECUTED'.
+
+    Возвращает:
+        List[Dict[str, Any]]: Список отфильтрованных операций.
+    """
+    return [operation for operation in origin_list if operation.get('state') == state]
 
 
 def sort_by_date(origin_list: List[Dict[str, Any]], reverse_list: bool = True) -> List[Dict[str, Any]]:
@@ -12,7 +23,7 @@ def sort_by_date(origin_list: List[Dict[str, Any]], reverse_list: bool = True) -
 
 if __name__ == "__main__":
     print(
-        sort_by_date(
+        filter_by_state(
             [
                 {"id": 41428829, "state": "EXECUTED", "date": "2019-07-03T18:35:29.512364"},
                 {"id": 939719570, "state": "EXECUTED", "date": "2018-06-30T02:08:58.425572"},

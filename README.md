@@ -22,4 +22,3 @@ print(filtered_operations)
 
 ## Контакты
 Контакты для обратной связи:[kolenskiypython@gmail.com](mailto:kolenskiypython@gmail.com)
-
