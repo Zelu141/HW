@@ -14,8 +14,7 @@ def mask_account_card(payment_info: str) -> str | None:
     if mask_payment_number:
         payment_data.append(mask_payment_number)
         return " ".join(payment_data)
-    raise ValueError("Не верный формат данных")
-
+    raise ValueError
 
 def get_data(data: str) -> str:
     """Функция для возвращения даты в нужный формат"""
@@ -24,5 +23,5 @@ def get_data(data: str) -> str:
 
 
 if __name__ == "__main__":
-    print(mask_account_card("Счет 73654108430135874305"))
+    print(mask_account_card("7365410843013587"))
     print(get_data("2018-07-11T02:26:18.671407"))

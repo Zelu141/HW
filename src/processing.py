@@ -1,6 +1,6 @@
 from typing import Any, Dict, List
+from datetime import datetime
 
-import pytest
 
 
 inform_state = [
@@ -25,10 +25,15 @@ def filter_by_state(origin_list: List[Dict[str, Any]], state: str = "EXECUTED") 
     return [operation for operation in origin_list if operation.get("state") == state]
 
 
-@pytest.fixture
-def sort_by_date(origin_list: List[Dict[str, Any]], reverse_list: bool = True) -> List[Dict[str, Any]]:
-    """Функция для сортировки по доте в порядке убывания или возрастания"""
-    sorted_list = sorted(origin_list, key=lambda d: d["date"], reverse=reverse_list)
+def sort_by_date(dict_list, ascending=True):
+    # Конвертация строки даты в объект datetime для сравнения
+    for d in dict_list:
+        d['date'] = datetime.strptime(d['date'], '%Y-%m-%dT%H:%M:%S.%f')
+    # Сортировка списка словарей по ключу 'date'
+    sorted_list = sorted(dict_list, key=lambda x: x['date'], reverse=not ascending)
+    # Конвертация объектов datetime обратно в строки
+    for d in sorted_list:
+        d['date'] = d['date'].strftime('%Y-%m-%dT%H:%M:%S.%f')  # Удаление последних трех цифр микросекунд
     return sorted_list
 
 

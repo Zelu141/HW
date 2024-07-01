@@ -1,7 +1,7 @@
+
 import pytest
 
-from src.processing import filter_by_state, sort_by_date, inform_state
-
+from src.processing import filter_by_state, sort_by_date
 
 # Тестовые данные
 test_data = [
@@ -52,3 +52,22 @@ def test_filter_by_state_invalid_input():
     """
     with pytest.raises(TypeError):
         filter_by_state(None, state="EXECUTED")
+
+
+# Данные для тестирования
+test_dataa = [{'id': 939719570, 'state': 'EXECUTED', 'date': '2018-06-30T02:08:58.425572'}]
+
+# Ожидаемый результат сортировки по возрастанию
+expected_asc = [{'id': 939719570, 'state': 'EXECUTED', 'date': '2018-06-30T02:08:58.425572'}]
+
+# Ожидаемый результат сортировки по убыванию
+expected_desc = [{'id': 939719570, 'state': 'EXECUTED', 'date': '2018-06-30T02:08:58.425572'}]
+
+# Параметризация теста с одним набором данных
+@pytest.mark.parametrize("test_input, expected", [
+    (test_dataa, expected_asc),
+    (test_dataa, expected_desc)
+])
+def test_sort_by_date(test_input, expected):
+    # Проверка сортировки
+    assert sort_by_date(test_input, ascending=(expected == expected_asc)) == expected
