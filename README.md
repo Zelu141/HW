@@ -19,6 +19,16 @@ operations = [
 filtered_operations = filter_by_state(operations)
 print(filtered_operations)
 ```
+## Примеры использования функций :
+
+### Фильтрация транзакций по валюте
+
+```python
+from src.generators import filter_by_currency
+
+transactions = [Место для ваших транзакций] 
+filtered_transactions = list(filter_by_currency(transactions, 'USD'))
+```
 
 ## Тестирование
 
