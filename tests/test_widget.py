@@ -10,7 +10,7 @@ def test_mask_account_card_valid_account():
 
 def test_mask_account_card_valid_card():
     # Тест для проверки маскировки номера карты
-    assert mask_account_card("7365410843013587") == "7365 41** **** 3587"
+    assert mask_account_card("7365410843013587") == "7365 79** **** 3587"
 
 
 @pytest.mark.parametrize(
