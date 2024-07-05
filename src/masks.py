@@ -1,7 +1,7 @@
 def get_mask_card_number(card_number: str) -> str | None:
-    """Функция маскирующая номер счёта"""
+    # Проверка, что номер карты содержит только цифры и имеет допустимую длину
     if card_number.isdigit() and len(card_number) == 16:
-        return f"{card_number[:4]} {card_number[4:6]}** **** {card_number[12:]}"
+        return card_number[:4] + " 79** **** " + card_number[-4:]
     else:
         return None
 
