@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09e7044f-24e6-48af-8d98-9d1ac160fe48" name="Changes" comment="final HW fixies">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2024_19_02_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2024_19_04_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_06_2024_19_07_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="09e7044f-24e6-48af-8d98-9d1ac160fe48" name="Changes" comment="final HW fixies" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,12 +41,15 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for test_decorators.test_function_fail.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_decorators.test_function_success.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for test_generators.test_card_number_generator.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for test_generators.test_card_number_generator_single.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for test_generators.test_filter_by_currency.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for test_generators.test_filter_by_currency_empty.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for test_widget.test_mask_account_card_invalid_format.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for test_widget.test_mask_account_card_valid_card.executor&quot;: &quot;Run&quot;,
+    &quot;Python.decorators.executor&quot;: &quot;Run&quot;,
     &quot;Python.generators.executor&quot;: &quot;Run&quot;,
     &quot;Python.masks.executor&quot;: &quot;Run&quot;,
     &quot;Python.processing.executor&quot;: &quot;Run&quot;,
@@ -63,8 +61,30 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python tests.Python tests for test_widget.test_mask_account_card_valid_card">
-    <configuration name="Python tests for test_generators.test_card_number_generator" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.decorators">
+    <configuration name="decorators" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Homework v2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/decorators.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_decorators.test_function_fail" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Homework v2" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -75,11 +95,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_generators.test_card_number_generator&quot;" />
+      <option name="_new_target" value="&quot;test_decorators.test_function_fail&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_generators.test_filter_by_currency" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_decorators.test_function_success" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Homework v2" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -90,22 +110,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_generators.test_filter_by_currency&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_generators.test_filter_by_currency_empty" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="Homework v2" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_generators.test_filter_by_currency_empty&quot;" />
+      <option name="_new_target" value="&quot;test_decorators.test_function_success&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -141,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.decorators" />
+        <item itemvalue="Python tests.Python tests for test_decorators.test_function_success" />
+        <item itemvalue="Python tests.Python tests for test_decorators.test_function_fail" />
         <item itemvalue="Python tests.Python tests for test_widget.test_mask_account_card_valid_card" />
         <item itemvalue="Python tests.Python tests for test_widget.test_mask_account_card_invalid_format" />
-        <item itemvalue="Python tests.Python tests for test_generators.test_card_number_generator" />
-        <item itemvalue="Python tests.Python tests for test_generators.test_filter_by_currency_empty" />
-        <item itemvalue="Python tests.Python tests for test_generators.test_filter_by_currency" />
       </list>
     </recent_temporary>
   </component>
