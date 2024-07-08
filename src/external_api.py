@@ -1,32 +1,26 @@
-import requests
 import os
-from dotenv import load_dotenv
 
-load_dotenv('.env')
+import requests
 
 
-def convert_currency(operation):
-    # Проверка на RUB и возврат суммы, если валюта - RUB
-    if operation["operationAmount"]["currency"]["code"] == "RUB":
-        return float(operation["operationAmount"]["amount"])
+def convert_to_rub(amount: float, currency: str) -> float:
+    """
+    Конвертирует сумму транзакции в рубли.
 
-    # Получение суммы и кода валюты из словаря
-    amount = operation["operationAmount"]["amount"]
-    currency_code = operation["operationAmount"]["currency"]["code"]
+    :param amount: Сумма транзакции.
+    :param currency: Валюта транзакции ('USD', 'EUR', 'RUB').
+    :return: Сумма транзакции в рублях.
+    :raises Exception: Если запрос к API не удался.
+    """
+    if currency == 'RUB':
+        return amount
 
-    # Конвертация валюты (здесь должна быть логика конвертации)
-    # Например, использование внешнего API для получения курса валюты
-    # converted_amount = amount * get_exchange_rate(currency_code)
+    access_key = os.getenv('API_KEY')
+    url = f'https://api.apilayer.com/exchangerates_data/convert?to=RUB&from={currency}&amount={amount}'
+    headers = {'apikey': access_key}
 
-    # Возвращаем сконвертированную сумму как float
-    # return float(converted_amount)
-    # Заглушка для примера, замените на реальную логику конвертации
-    return float(amount) * 1.1  # Пример умножения на курс
-    api_key = os.getenv("API_KEY")
-    url = f"https://api.apilayer.com/exchangerates_data/convert?to=RUB&from={currency}&amount={amount}"
-    headers = {"apikey": api_key}
     response = requests.get(url, headers=headers)
     if response.status_code == 200:
-        return response.json()["result"]
+        return response.json().get('result', 0.0)
     else:
-        raise Exception("API request failed")
+        raise Exception('API request failed with status code: ' + str(response.status_code))

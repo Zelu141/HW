@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09e7044f-24e6-48af-8d98-9d1ac160fe48" name="Changes" comment="final HW fixies">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_external_api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/external_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/external_api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -52,6 +51,10 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "Python tests.Python tests for test_decorators.test_function_fail.executor": "Run",
     "Python tests.Python tests for test_decorators.test_function_success.executor": "Run",
+    "Python tests.Python tests for test_external_api.TestExternalAPI.executor": "Run",
+    "Python tests.Python tests for test_external_api.TestExternalAPI.test_convert_to_rub_failure.executor": "Run",
+    "Python tests.Python tests for test_external_api.TestExternalAPI.test_convert_to_rub_invalid_currency.executor": "Run",
+    "Python tests.Python tests for test_external_api.TestExternalAPI.test_convert_to_rub_success.executor": "Run",
     "Python tests.Python tests for test_generators.test_card_number_generator.executor": "Run",
     "Python tests.Python tests for test_generators.test_card_number_generator_single.executor": "Run",
     "Python tests.Python tests for test_generators.test_filter_by_currency.executor": "Run",
@@ -60,6 +63,9 @@
     "Python tests.Python tests for test_utils.TestExternalAPI.test_convert_currency.executor": "Run",
     "Python tests.Python tests for test_utils.TestUtils.executor": "Run",
     "Python tests.Python tests for test_utils.TestUtils.test_read_transactions.executor": "Run",
+    "Python tests.Python tests for test_utils.TestUtils.test_read_transactions_empty.executor": "Run",
+    "Python tests.Python tests for test_utils.TestUtils.test_read_transactions_not_found.executor": "Run",
+    "Python tests.Python tests for test_utils.TestUtils.test_read_transactions_valid.executor": "Run",
     "Python tests.Python tests for test_widget.test_mask_account_card_invalid_format.executor": "Run",
     "Python tests.Python tests for test_widget.test_mask_account_card_valid_card.executor": "Run",
     "Python.decorators.executor": "Run",
@@ -80,30 +86,8 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Python.external_api">
-    <configuration name="external_api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Homework v2" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/external_api.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_utils.TestExternalAPI" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for test_external_api.TestExternalAPI.test_convert_to_rub_invalid_currency">
+    <configuration name="Python tests for test_external_api.TestExternalAPI" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Homework v2" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -114,11 +98,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_utils.TestExternalAPI&quot;" />
+      <option name="_new_target" value="&quot;test_external_api.TestExternalAPI&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_utils.TestExternalAPI.test_convert_currency" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_external_api.TestExternalAPI.test_convert_to_rub_failure" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Homework v2" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -129,11 +113,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_utils.TestExternalAPI.test_convert_currency&quot;" />
+      <option name="_new_target" value="&quot;test_external_api.TestExternalAPI.test_convert_to_rub_failure&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_utils.TestUtils" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_external_api.TestExternalAPI.test_convert_to_rub_invalid_currency" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Homework v2" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -144,11 +128,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_utils.TestUtils&quot;" />
+      <option name="_new_target" value="&quot;test_external_api.TestExternalAPI.test_convert_to_rub_invalid_currency&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_utils.TestUtils.test_read_transactions" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_external_api.TestExternalAPI.test_convert_to_rub_success" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Homework v2" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -159,17 +143,32 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_utils.TestUtils.test_read_transactions&quot;" />
+      <option name="_new_target" value="&quot;test_external_api.TestExternalAPI.test_convert_to_rub_success&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_utils.TestUtils.test_read_transactions_valid" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Homework v2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_utils.TestUtils.test_read_transactions_valid&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.external_api" />
-        <item itemvalue="Python tests.Python tests for test_utils.TestExternalAPI.test_convert_currency" />
-        <item itemvalue="Python tests.Python tests for test_utils.TestExternalAPI" />
-        <item itemvalue="Python tests.Python tests for test_utils.TestUtils" />
-        <item itemvalue="Python tests.Python tests for test_utils.TestUtils.test_read_transactions" />
+        <item itemvalue="Python tests.Python tests for test_external_api.TestExternalAPI.test_convert_to_rub_invalid_currency" />
+        <item itemvalue="Python tests.Python tests for test_external_api.TestExternalAPI" />
+        <item itemvalue="Python tests.Python tests for test_external_api.TestExternalAPI.test_convert_to_rub_success" />
+        <item itemvalue="Python tests.Python tests for test_external_api.TestExternalAPI.test_convert_to_rub_failure" />
+        <item itemvalue="Python tests.Python tests for test_utils.TestUtils.test_read_transactions_valid" />
       </list>
     </recent_temporary>
   </component>
