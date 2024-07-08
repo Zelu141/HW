@@ -15,7 +15,6 @@ def read_transactions(file_path: str) -> List[Dict]:
             transactions = json.load(file)
             if isinstance(transactions, list):
                 return transactions
-            else:
-                return []
-    except (FileNotFoundError, json.JSONDecodeError):
+    except (FileNotFoundError, json.JSONDecodeError) as e:
+        print(f"Ошибка при чтении файла: {e}")
         return []

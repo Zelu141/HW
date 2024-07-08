@@ -5,7 +5,7 @@ from src.utils import read_transactions
 class TestUtils(unittest.TestCase):
     def test_read_transactions_valid(self):
         # Тест на чтение валидного файла
-        transactions = read_transactions('data\operations.json')
+        transactions = read_transactions('data.operations.json')
         self.assertIsInstance(transactions, list)
         self.assertGreater(len(transactions), 0)
 
