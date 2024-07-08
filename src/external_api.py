@@ -1,5 +1,8 @@
 import requests
 import os
+from dotenv import load_dotenv
+
+load_dotenv('.env')
 
 
 def convert_currency(operation):
@@ -19,7 +22,7 @@ def convert_currency(operation):
     # return float(converted_amount)
     # Заглушка для примера, замените на реальную логику конвертации
     return float(amount) * 1.1  # Пример умножения на курс
-    api_key = os.getenv("fcjtF6N2gmxUZM5i3pxv8wtR6XL3uDaX")
+    api_key = os.getenv("API_KEY")
     url = f"https://api.apilayer.com/exchangerates_data/convert?to=RUB&from={currency}&amount={amount}"
     headers = {"apikey": api_key}
     response = requests.get(url, headers=headers)
@@ -27,7 +30,3 @@ def convert_currency(operation):
         return response.json()["result"]
     else:
         raise Exception("API request failed")
-
-
-if __name__ == "__main__":
-    print(convert_currency(6, 5))
